@@ -6,7 +6,6 @@ public class Deck {
 	private int top;
 
 	//Makes 52 card deck.
-	//14 is used to represent an ace.
 	public Deck() {
 		theDeck = new Card[52];
 		int count=0;
