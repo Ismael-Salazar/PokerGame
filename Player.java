@@ -1,26 +1,25 @@
 import java.util.ArrayList;
 
 public class Player {
-
-	//Instance variable
+	
 	private ArrayList<Card> hand; 
 
-	//Makes new player
+	//Makes new player.
 	public Player() {	
 		hand = new ArrayList<Card>();
 	}
 
-	//Adds card to hand
+	//Adds card to hand.
 	public void addCard(Card c) {
 		hand.add(c);
 	}
 	
-	//Removes Card from hand
+	//Removes card from hand.
 	public void removeCard(Card c) {
 		hand.remove(c);
 	}
 
-	//Returns the hand
+	//Returns the hand.
 	public ArrayList<Card> getHand(){
 		return hand;
 	}	
