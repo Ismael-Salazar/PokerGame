@@ -1,13 +1,12 @@
 import java.util.Random;
 
 public class Deck {
-	
-	//Instance Variables
+
 	private Card[] theDeck;
 	private int top;
 
-	//Makes 52 card deck
-	//14 ia used to represent an ace.
+	//Makes 52 card deck.
+	//14 is used to represent an ace.
 	public Deck() {
 		theDeck = new Card[52];
 		int count=0;
@@ -20,7 +19,7 @@ public class Deck {
 		shuffle();
 	}	
 	
-	//Shuffles the deck
+	//Shuffles the deck.
 	public void shuffle() {
 		Random rand = new Random();
 		for (int i=0; i<=10000; i++){
@@ -33,7 +32,7 @@ public class Deck {
 		top=0;
 	}
 
-	//Returns the top card of the deck
+	//Returns the top card of the deck.
 	public Card deal() {
 		Card topCard = theDeck[top];
 		top++;
