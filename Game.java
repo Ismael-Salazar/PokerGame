@@ -4,13 +4,12 @@ import java.util.Collections;
 
 public class Game {
 	
-	//Instance Variables
 	private Player p;
 	private Deck cards;
 	private ArrayList<Card> currentHand;
 	boolean argsUsed = false;
 
-	//Command Line argument constructor
+	//Used when a hand is given.
 	public Game(String[] testHand) {
 		argsUsed = true;
 		cards = new Deck();
@@ -48,8 +47,7 @@ public class Game {
 		currentHand = p.getHand();
 	}
 
-	//Plays the game
-	//Changes depending whether args was used
+	//Plays the game.
 	public void play() {
 		System.out.println("Welcome to Video Poker!!");
 		if (!(argsUsed)) {
@@ -91,7 +89,7 @@ public class Game {
 
 	}
 
-	//Switches Cards with deck
+	//Switches Cards with deck.
 	public void switchCards() {
 		int kept = 0;
 		Scanner input = new Scanner(System.in);
@@ -109,7 +107,7 @@ public class Game {
 		}
 	}
 
-	//Checks hand using booleans 
+	//Checks hand. 
 	public String checkHand(ArrayList<Card> hand) {
 		boolean highestHand = false;
 
